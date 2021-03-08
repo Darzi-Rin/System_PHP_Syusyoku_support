@@ -1,2 +1,3 @@
 # System_PHP_Syusyoku_support
 グループシステム開発用
+就職サポートシステムを作ってます
