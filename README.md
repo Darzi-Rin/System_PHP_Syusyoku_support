@@ -1,3 +1,2 @@
-# System_PHP
+# System_PHP_Syusyoku_support
 グループシステム開発用
-このリポジトリをForkしてください
