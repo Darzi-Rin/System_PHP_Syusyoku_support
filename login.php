@@ -12,6 +12,6 @@
     <p>パスワード</p>
     <input type="text" id="pass">
     <p><a href="login_check_true.html"><input type="submit" value="login"></a></p>
-    <P><a href="login_check_false.html"></a></P>
+    <P><a href="login_check_false.html"><input type="submit" value="login_error"></a></P>
 </body>
 </html>
