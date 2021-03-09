@@ -1,5 +1,5 @@
+<?php session_start(); ?>
 <?php
-// タイムゾーンを設定
 date_default_timezone_set('Asia/Tokyo');
 if (isset($_GET['ym'])) {
     $ym = $_GET['ym'];
@@ -20,6 +20,7 @@ $youbi = date('w', mktime(0, 0, 0, date('m', $timestamp), 1, date('Y', $timestam
 $weeks = [];
 $week = '';
 $week .= str_repeat('<td></td>', $youbi);
+// カレンダー
 for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     $date = $ym . '-' . $day;
     $link = '<a href="calender_info.php?date='.$date.'">'.$day.'</a>';

@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <title>Top</title>
+    <title>学生向け|説明会予約サイト</title>
 </head>
 <body>
-<img src="images/4191096_m.jpg" alt="top画">
-<!-- カレンダー部分-->
-<?php require_once('calender.php');?>
+<header>ヘッダー(仮)</header>
+<h1>学生向け説明会予約サイトになります</h1>
+<img class="main_img" src="images/4191096_m.jpg" alt="top画">
+<h2>説明会掲示</h2>
+<br>
+<h2>カレンダー</h2>
+<?php require 'calender.php';?>
+<footer>フッター(仮)</footer>
 </body>
 </html>
