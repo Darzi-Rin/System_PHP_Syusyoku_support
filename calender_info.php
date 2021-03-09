@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,8 @@
 </head>
 <body>
 <?php
-$date =  $_GET['date'];
-print "今日は、{$date}日";
+$e = $_GET['date'];
+print "今日は、{$e}日";
 ?>
 <a href="top.php">戻る</a>  
 </body>

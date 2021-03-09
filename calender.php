@@ -22,7 +22,7 @@ $week = '';
 $week .= str_repeat('<td></td>', $youbi);
 for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     $date = $ym . '-' . $day;
-    $link = '<a href="calender_info.php?date="'.$date.'>'.$day.'</a>';
+    $link = '<a href="calender_info.php?date='.$date.'">'.$day.'</a>';
     if ($today == $date) {
         $week .= '<td class="today">' . $link. '</td>';;
     } else {
