@@ -25,7 +25,7 @@
   <div class='regist_form'>
     <h2>会員登録</h2>
     <p>名前<br><input type='text' name='name'></p>
-    <p>年齢（半角数字）<br><input type='number'></p>
+    <p>年齢（半角数字）<br><input type='number' name='age'></p>
     <p>メールアドレス（半角英数字）<br><input type='email' name='mail'></p>
     <p>パスワード<br><input type='password' name='pass'></p>
     <p>住所<br><input type='text' name="street_address"></p>
