@@ -11,13 +11,19 @@
 <?php $e = $_GET['date'];?>
 <h2><?php print $e;?>日の予定</h2>
 <?php 
-// SQL文記入
-// foreach(){
+require_once('db_conect.php');
+$sql = "select * from company_menu where id = :id";
+$stm = $pdo->prepare($sql);
+$stm->bindValue(":id",$_REQUEST['id'],PDO::PARAM_STR);
+$stm->execute();
+$result = $stm->fetchAll(PDO::FETCH_ASSOC);
+foreach($result as $row){
 ?>
-<p>日時：<?php?></p>
-<p>社名：<?php?></p>
-<p>その他：<?php?></p>
-<?php //}
+<p>日時：<?= $row["date"] ?></p>
+<p>社名：<?= $row["name"]?></p>
+<p>企業説明：<?= $row["explan"]?></p>
+<?php
+ }
 ?>
 <button type="button" class="btn btn-outline-primary" onclick="location.href='./top.php'">戻る</button>
 </body>
