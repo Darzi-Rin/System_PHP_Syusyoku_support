@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <footer> -->
 <hr>
 <ul class="footer-menu">
@@ -21,3 +22,6 @@
 </ul>
 <p>© sample_site</p>
 <!-- </footer> -->
+=======
+
+>>>>>>> c447cd812568895e39fb89ec00b0edc85c610d57

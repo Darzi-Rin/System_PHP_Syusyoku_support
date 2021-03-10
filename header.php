@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <!DOCTYPE html>
 <html lang='ja'>
 <head>
@@ -33,3 +34,6 @@
 </nav>
 <hr>
 <!-- </header> -->
+=======
+
+>>>>>>> c447cd812568895e39fb89ec00b0edc85c610d57
