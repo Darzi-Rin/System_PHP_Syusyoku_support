@@ -11,19 +11,25 @@
 <?php $e = $_GET['date'];?>
 <h2><?php print $e;?>日の予定</h2>
 <?php 
-require_once('db_conect.php');
+require 'db_connect.php';
 $sql = "select * from company_menu where id = :id";
 $stm = $pdo->prepare($sql);
-$stm->bindValue(":id",$_REQUEST['id'],PDO::PARAM_STR);
+$stm->bindValue(':id',empty($_REQUEST['id']),PDO::PARAM_STR);
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $row){
+    if($e === $row["date"]){
 ?>
-<p>日時：<?= $row["date"] ?></p>
-<p>社名：<?= $row["name"]?></p>
-<p>企業説明：<?= $row["explan"]?></p>
+    <p>会社名：<?= $row["name"]?></p>
+    <p>業務内容：<?= $row["company"]?></p>
+    <p>企業説明：<?= $row["explan"]?></p>
 <?php
- }
+    }else{
+?>
+    <p>この日に該当する説明会はありません</p>
+<?php
+    }
+}
 ?>
 <button type="button" class="btn btn-outline-primary" onclick="location.href='./top.php'">戻る</button>
 </body>
