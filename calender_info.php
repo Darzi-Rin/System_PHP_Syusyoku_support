@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>カレンダー詳細</title>
 </head>
-<header></header>
+<header class="sticky-top">
+<?php require "menu_bar.php"; ?>
+</header>
 <body>
 <?php $e = $_GET['date'];?>
 <h2><?php print $e;?>日の予定</h2>
@@ -41,6 +43,7 @@ foreach($result as $row){
     }else{
 ?>
     <p>この日に該当する説明会はありません</p>
+    <hr>
 <?php
     }
 }

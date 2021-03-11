@@ -40,7 +40,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 	}
 }
 ?>
-<div class="containerfluid">
+<div class="container-fluid">
     <div class="row">
     <div class="col-sm-6">
     <h3><a href="?ym=<?php print $prev; ?>">&lt;</a> <?php print $html_title; ?> <a href="?ym=<?php print $next; ?>"> &gt;</a></h3>
