@@ -16,7 +16,7 @@
 require 'db_connect.php';
 $sql = "select * from company_menu where id = :id";
 $stm = $pdo->prepare($sql);
-$stm->bindValue(':id',isset($_REQUEST['id']),PDO::PARAM_STR);
+$stm->bindValue(':id',!isset($_REQUEST['id']),PDO::PARAM_STR);
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $row){

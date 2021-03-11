@@ -1,17 +1,14 @@
 // Javascript Sample
 function formSwitch() {
-    hoge = document.getElementsByName('cate')
-    if(hoge[0].checked){
-        document.getElementById('itlist').style.display = "";
-        document.getElementById('etclist').style.display = "";
-    }else if(hoge[1].checked){
-        document.getElementById('itlist').style.display = "";
-        document.getElementById('etclist').style.display = "none";
+    hoge = document.getElementsByName('cate');
+    if(hoge[1].checked){
+        document.getElementById('it-list').style.display = "";
+        document.getElementById('office-list').style.display = "none";
     } else if(hoge[2].checked){
-        document.getElementById('itlist').style.display = "none";  
-        document.getElementById('etclist').style.display = "";  
+        document.getElementById('it-list').style.display = "none";  
+        document.getElementById('office-list').style.display = "";  
     } else {
-        document.getElementById('itlist').style.display = "none";
-        document.getElementById('etclist').style.display = "none";
+        document.getElementById('it-list').style.display = "";
+        document.getElementById('office-list').style.display = "";
     }
 }
