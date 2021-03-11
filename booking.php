@@ -67,13 +67,11 @@
             <dt>お名前 <span class="must">※</span></dt>
             <dd><input type="text" name="name"></dd>
             <dt>メールアドレス <span class="must">※</span></dt>
-            <dd><input type="text" name="email"></dd>
-            <dt>TEL <span class="must">※</span></dt>
-            <dd><input type="text" name="tel"></dd>
-            <dt>性別 <span class="must"></span></dt>
-            <dd><input type="radio" name="human" value="" />男
-                <input type="radio" name="human" value="" />女
-            </dd>
+            <dd><input type="text" name="mail"></dd>
+            <dt>パスワード <span class="must">※</span></dt>
+            <dd><input type="text" name="password"></dd>
+            <dt>年齢 <span class="must">※</span></dt>
+            <dd><input type="text" name="age"></dd>
         </dl>
         <p id="submit_button_cover">
             <input type="button" onclick="location.href='./booking_end.html'" value="予約する">
