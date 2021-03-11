@@ -21,12 +21,6 @@ ul li a.items{
   color: #555;
   font-weight: bold;
 }
-ul li.current{
-  border: 3px solid #555;
-}
-ul li.current a{
-  color: #555;
-}
 ul li a.items:hover{
   color: #3bb6fd;
 }
