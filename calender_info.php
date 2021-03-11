@@ -3,10 +3,10 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>カレンダー詳細</title>
 </head>
+<header></header>
 <body>
 <?php $e = $_GET['date'];?>
 <h2><?php print $e;?>日の予定</h2>
@@ -14,15 +14,29 @@
 require 'db_connect.php';
 $sql = "select * from company_menu where id = :id";
 $stm = $pdo->prepare($sql);
-$stm->bindValue(':id',empty($_REQUEST['id']),PDO::PARAM_STR);
+$stm->bindValue(':id',isset($_REQUEST['id']),PDO::PARAM_STR);
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $row){
     if($e === $row["date"]){
 ?>
-    <p>会社名：<?= $row["name"]?></p>
-    <p>業務内容：<?= $row["company"]?></p>
-    <p>企業説明：<?= $row["explan"]?></p>
+    <p><img src="images/<?= $row['id'] ?>.png"></p>
+    <table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th>会社名</th>
+        <td><?= $row["name"]?></td>
+    </tr>
+    <tr>
+        <th>業務内容</th>
+        <td><?= $row["company"]?></td>
+    </tr>
+    <tr>
+        <th>企業説明</th>
+        <td><?= $row["explan"]?></td>
+    </tr>
+    </tbody>
+    </table>
 <?php
     }else{
 ?>
@@ -33,4 +47,5 @@ foreach($result as $row){
 ?>
 <button type="button" class="btn btn-outline-primary" onclick="location.href='./top.php'">戻る</button>
 </body>
+<footer></footer>
 </html>
