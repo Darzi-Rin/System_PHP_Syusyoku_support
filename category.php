@@ -2,9 +2,8 @@
 <h2 class="title">説明会掲示</h2>
 <?php 
 require 'db_connect.php';
-$sql = "select * from demo where id = :id";
+$sql = "select * from demo ";
 $stm = $pdo->prepare($sql);
-$stm->bindValue(':id',!isset($_REQUEST['id']),PDO::PARAM_STR);
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -43,7 +42,7 @@ foreach($result as $row){
  <div id="office-list">
     <div class="row-item">
         <img src="images/<?= $row['id'] ?>.png" class="row-img">
-        <h4 class="row-name">社名：
+        <h4 class="row-name">
             <a href="datail<?= $row['id'] ?>.html">
             <?= $row['name'] ?>
             </a>

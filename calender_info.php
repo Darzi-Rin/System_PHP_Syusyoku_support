@@ -23,15 +23,14 @@ table{
 <h2><?php print $e;?>日の予定</h2>
 <?php 
 require 'db_connect.php';
-$sql = "select * from company_menu where id = :id";
+$sql = "select * from company_menu";
 $stm = $pdo->prepare($sql);
-$stm->bindValue(':id',!isset($_REQUEST['id']),PDO::PARAM_STR);
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $row){
     if($e === $row["date"]){
 ?>
-    <p><img src="images/<?= $row['id'] ?>.png"></p>
+    <label><img src="images/<?= $row['id'] ?>.png"></labe>
     <table class="table table-bordered">
     <tbody>
     <tr>
@@ -48,11 +47,15 @@ foreach($result as $row){
     </tr>
     </tbody>
     </table>
+    <style>
+        p{
+            display:none;
+        }
+    </style>
 <?php
     }else{
 ?>
     <p>この日に該当する説明会はありません</p>
-    <hr>
 <?php
     }
 }

@@ -65,6 +65,7 @@ a:visited {
 }
 .row-items {
     margin-bottom: 60px;
+    display: block;
 } 
 .row-item {
     display: inline-block;
