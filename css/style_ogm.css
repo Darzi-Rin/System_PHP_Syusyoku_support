@@ -1,7 +1,14 @@
 /* Sample CSS */
-.main_img{
-    height: 500px;
+body{
+    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.img{
     text-align: center;
+}
+.main_img{
+    height: 800px;
+    width: auto;
 }
 .col-sm-6 {
     font-family: 'Noto Sans', sans-serif;
@@ -10,8 +17,6 @@
     color: #010079;
     text-shadow: 0 0 5px white;
     border-left: solid 7px #010079;
-    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
     padding: 20px 0;
 }
 h3 {
@@ -60,14 +65,23 @@ a:visited {
 }
 .row-items {
     margin-bottom: 60px;
-}
-  
+} 
 .row-item {
     display: inline-block;
-    width: 40%;
+    width: 30%;
     padding: 20px;
     margin-top: 40px;
+    background-color: white;
 }
 .row-img {
     border-radius: 5px;
+}
+.table{
+    background-color: white;
+}
+.top-form-check{
+    background: lightskyblue;
+    padding: 10px;
+    margin:0 600px 5px 10px;
+    border-radius: 10px;
 }
