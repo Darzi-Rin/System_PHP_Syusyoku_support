@@ -10,10 +10,10 @@
     <title>学生向け説明会予約サイト</title>
 </head>
 <header class="sticky-top">
-<?php require "menu_bar.php"; ?>
+<?php require "header.php"; ?>
 </header>
 <body>
-<h1 class="title">IT業界に幅広く対応！企業説明会予約サイト</h1>
+<h1 class="title">IT業界に幅広く対応！【Syusyoku_support】</h1>
 
 <img class="main_img" src="images/4191096_m.jpg" alt="top画">
 <?php require "category.php"; ?>
@@ -22,4 +22,7 @@
 <?php require 'calender.php';?>
 </body>
 <script src="js/code.js"></script>
+<footer>
+<?php require "footer.php"?>
+</footer>
 </html>
