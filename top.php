@@ -13,7 +13,7 @@
 <?php require "menu_bar.php"; ?>
 </header>
 <body>
-<h1>学生向け説明会予約サイト</h1>
+<h1 class="title">IT業界に幅広く対応！企業説明会予約サイト</h1>
 
 <img class="main_img" src="images/4191096_m.jpg" alt="top画">
 <?php require "category.php"; ?>

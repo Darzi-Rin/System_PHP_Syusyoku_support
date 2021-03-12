@@ -9,7 +9,7 @@ $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <form>
 <div class="top-form-check">
-    <input class="cate_check" type="radio" name="cate" value="" onclick="formSwitch()">
+    <input class="cate_check" type="radio" name="cate" value="" onclick="formSwitch()" checked="checked">
     <label class="cate_check_label">すべて</label>
 </div>
 <div class="top-form-check">
@@ -18,7 +18,7 @@ $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 </div>
 <div class="top-form-check">
     <input class="cate_check" type="radio" name="cate" value="etc" onclick="formSwitch()">
-    <label class="cate_check_label">事務</label>
+    <label class="cate_check_label">その他</label>
 </div>
 </form>
 

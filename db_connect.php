@@ -1,7 +1,7 @@
     <?php 
-    $user = 'testuser';
-    $password = 'userpass';
-    $dbName = 'test';
+    $user = 'syusyoku_support';
+    $password = 'syusyokupass';
+    $dbName = 'syusyoku_support';
     $host = 'localhost:8889';
     $dsn = "mysql:host = {$host};dbname={$dbName};chearset=utf8";
 
