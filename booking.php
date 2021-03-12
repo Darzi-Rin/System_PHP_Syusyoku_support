@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style_home.css">
     <link rel="stylesheet" href="css/style_booking.css">
     <link rel="stylesheet" href="js/top.js">
-    <title>Document</title>
+    <title>予約</title>
 </head>
 <header>
     <?php require_once 'header.php'; ?>
