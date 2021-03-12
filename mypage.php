@@ -41,6 +41,7 @@
     <p>お名前：<?= $_SESSION['yoyaku']['name'] ?></p>
     <p>日付：<?= $_SESSION['yoyaku']['date'] ?></p>
     <p>会社名：<?= $_SESSION['yoyaku']['company'] ?></p>
+    <p>就職状況：<?= $_SESSION['syusyoku_status']['status'] ?></p>
     <?php
     }
     ?>
