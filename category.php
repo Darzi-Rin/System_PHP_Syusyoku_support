@@ -31,7 +31,7 @@ foreach($result as $row){
  <div id="it-list">
     <div class="row-item">
         <img src="images/<?= $row['id'] ?>.png" class="row-img">
-        <h4 class="row-name">社名：
+        <h4 class="row-name">
             <a href="datail<?= $row['id'] ?>.html">
             <?= $row['name'] ?>
             </a>
