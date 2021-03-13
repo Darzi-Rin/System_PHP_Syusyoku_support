@@ -15,9 +15,7 @@ table{
     background-color: white;
 }
 </style>
-<header class="sticky-top">
-<?php require "menu_bar.php"; ?>
-</header>
+<header><?php require "header.php" ?></header>
 <body>
 <?php $e = $_GET['date'];?>
 <h2><?php print $e;?>日の予定</h2>
@@ -57,12 +55,11 @@ foreach($result as $row){
     }else{
 ?>
     <p>この日に該当する説明会はありません</p>
-    <hr>
 <?php
     }
 }
 ?>
 <button type="button" class="btn btn-outline-primary" onclick="location.href='./top.php'">戻る</button>
 </body>
-<footer></footer>
+<footer><?php require "footer.php"?></footer>
 </html>

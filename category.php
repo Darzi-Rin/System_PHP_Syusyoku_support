@@ -37,7 +37,7 @@ foreach($result as $row){
         <p class="row-date">日時：<?= $row['date'] ?></p>
     </div>
  </div>
-<?php } else if($row['category'] == 2) {?>
+<?php } else if($row['category'] == 2) { ?>
  <div id="office-list">
     <div class="row-item">
         <img src="images/<?= $row['id'] ?>.png" class="row-img">
