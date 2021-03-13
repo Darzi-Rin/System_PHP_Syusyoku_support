@@ -38,8 +38,7 @@ th:nth-of-type(1){
 th:nth-of-type(7){
     color: blue;
 }
-#itlist{
- color: red;
+#it-list #office-list{
  font-size: 16px;
 }
 a {
@@ -65,22 +64,19 @@ a:visited {
 }
 .row-items {
     margin-bottom: 60px;
-    display: block;
 } 
 .row-item {
     display: inline-block;
     width: 30%;
     padding: 20px;
     margin-top: 40px;
-    background-color: white;
+    background-color: lightgreen;
 }
 .row-img {
     border-radius: 5px;
 }
-.table{
-    background-color: white;
-}
 .top-form-check{
+    display: inline-block;
     background: lightskyblue;
     padding: 10px;
     margin:0 600px 5px 10px;

@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/style_ogm.css">
 <h2 class="title">説明会掲示</h2>
 <?php 
 require 'db_connect.php';
