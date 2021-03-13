@@ -1,0 +1,41 @@
+/* ヘッダー */
+ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+ul.color{
+    background-color: white;
+}
+ul li{
+  display: table-cell;
+  min-width: 50px;
+}
+ul li a.items{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+ul li a.items:hover{
+  color: #3bb6fd;
+}
+/* ボディー */
+body{
+  text-align: center;
+}
+/* フッター */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: powderblue;
+    color: white;
+    text-align: center;
+}
+ul.footer-menu li {
+display: inline;
+}
