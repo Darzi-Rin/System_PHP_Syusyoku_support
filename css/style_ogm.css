@@ -70,7 +70,8 @@ a:visited {
     width: 30%;
     padding: 20px;
     margin-top: 40px;
-    background-color: lightgreen;
+    border-radius: 20px;
+    border: solid 2px darkgoldenrod;
 }
 .row-img {
     border-radius: 5px;
@@ -79,6 +80,6 @@ a:visited {
     display: inline-block;
     background: lightskyblue;
     padding: 10px;
-    margin:0 600px 5px 10px;
+    margin:0 30px 5px 10px;
     border-radius: 10px;
 }

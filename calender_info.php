@@ -47,6 +47,7 @@ foreach($result as $row){
     </tr>
     </tbody>
     </table>
+    <hr>
     <style>
         p{
             display:none;
@@ -56,6 +57,7 @@ foreach($result as $row){
     }else{
 ?>
     <p>この日に該当する説明会はありません</p>
+    <hr>
 <?php
     }
 }
