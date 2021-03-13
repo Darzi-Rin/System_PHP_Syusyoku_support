@@ -1,0 +1,85 @@
+/* Sample CSS */
+.img{
+    text-align: center;
+}
+.main_img{
+    height: 800px;
+    width: auto;
+}
+.col-sm-6 {
+    font-family: 'Noto Sans', sans-serif;
+}
+.title{
+    color: #010079;
+    text-shadow: 0 0 5px white;
+    border-left: solid 7px #010079;
+    margin-top: 5px;
+    padding: 20px 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+th {
+    height: 30px;
+    text-align: center;
+}
+td {
+    height: 100px;
+}
+.today {
+    background: lightblue;
+}
+th:nth-of-type(1){
+    color: red;
+}
+th:nth-of-type(7){
+    color: blue;
+}
+#it-list #office-list{
+ font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: #4ac0b9;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #4ac0b9;
+}
+.row-name {
+    line-height: 1.7;
+    font-size: 25px;
+    margin-top: 15px;
+    color: #4ac0b9;
+}
+.row-date {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #322f33;
+}
+.row-items {
+    margin-bottom: 60px;
+} 
+.row-item {
+    display: inline-block;
+    width: 350px;
+    padding: 10px 0;
+    margin: 0 30px 30px 0;
+    border-radius: 20px;
+    border: solid 2px darkgoldenrod;
+}
+.row-img {
+    border-radius: 5px;
+}
+.top-form-check{
+    display: inline-block;
+    background: lightskyblue;
+    padding: 10px;
+    margin:0 30px 5px 10px;
+    border-radius: 10px;
+}
