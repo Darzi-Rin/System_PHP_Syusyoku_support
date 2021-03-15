@@ -15,17 +15,12 @@
 <body>
     <div id="datepicker">
         <form action="booking_end.php" method="post">
-	        <table>
-	            <tr><th><label for="name">お名前:</label></th>
-	                <td><input type="text" name="name" value="" ></td>
-	            </tr>
-		        <tr><th><label for="date">日時:</label></th>
-		            <td><input type="date" name="date" value="" ></td>
-		        </tr>
-		        <tr><th><label for="company">会社名:</label></th>
-		            <td><input type="text" name="company" value="" ></td>
-		        </tr>
-	        </table>
+	        <label for="name">お名前</label><br>
+	            <input type="text" name="name" value="" ><br>
+	        <label for="date">日時</label><br>
+		        <input type="date" name="date" value="" ><br>
+		    <label for="company">会社名</label><br>
+		        <input type="text" name="company" value="" >
         </form>
     </div>   
 <section>
