@@ -54,3 +54,4 @@ foreach($result as $row){
 }
 ?>
 </div>
+<script src="js/code.js"></script>

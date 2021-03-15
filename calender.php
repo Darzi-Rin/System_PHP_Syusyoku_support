@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php
 date_default_timezone_set('Asia/Tokyo');
 if (isset($_GET['ym'])) {
@@ -42,7 +41,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 ?>
 <div class="container-fluid">
     <div class="row">
-    <div class="col-sm-6">
     <h3><a href="?ym=<?php print $prev; ?>">&lt;</a> <?php print $html_title; ?> <a href="?ym=<?php print $next; ?>"> &gt;</a></h3>
     <table class="table table-bordered">
             <tr>
@@ -56,6 +54,5 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             </tr>
             <?php foreach($weeks as $week){print $week;}?>
         </table>
-        </div>
     </div>
 </div>
