@@ -24,10 +24,6 @@ ul li a.items{
 ul li a.items:hover{
   color: #3bb6fd;
 }
-/* ボディー */
-body{
-  text-align: center;
-}
 /* フッター */
 footer{
     width: 100%;
