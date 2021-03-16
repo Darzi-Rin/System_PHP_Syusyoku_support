@@ -1,15 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang='ja'>
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='css/style_home.css'>
   <link rel='stylesheet' href='js/top.js'>
-  <title>Document</title>
 </head>
-<body> -->
-<!-- header -->
-<!-- <header> -->
 <nav>
   <ul class="color">
     <li><a class="items" href="top.php">トップページ</a></li>
@@ -32,4 +28,3 @@
   </ul>
 </nav>
 <hr>
-<!-- </header> -->
