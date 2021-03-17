@@ -19,37 +19,62 @@
   <div class='personal_infomation'>
     <h2>個人情報</h2>
     <?php
+    require 'db_connect.php';
     if (!isset($_SESSION['user'])) {
       echo '個人情報を確認するにはログインしてください。';
-    } else {  //正常処理 ?>
-    <p>お名前：<?= $_SESSION['user']['name'] ?></p>
-    <p>パスワード：<?= $_SESSION['user']['password'] ?></p>
-    <p>年齢：<?= $_SESSION['user']['age'] ?></p>
-		<p>ご住所：<?= $_SESSION['user']['street_address'] ?></p>
-    <p>メールアドレス：<?= $_SESSION['user']['mail'] ?></p>
+    } else {  //正常処理
+    ?>
+      <p>お名前：<?= $_SESSION['user']['name'] ?></p>
+      <p>パスワード：<?= $_SESSION['user']['password'] ?></p>
+      <p>年齢：<?= $_SESSION['user']['age'] ?></p>
+      <p>ご住所：<?= $_SESSION['user']['street_address'] ?></p>
+      <p>メールアドレス：<?= $_SESSION['user']['mail'] ?></p>
     <?php
     }
     ?>
   </div>
+  <hr>
   <br>
   <div class='yoyakukanri'>
     <h2>予約管理</h2>
     <?php
-    if (!isset($_SESSION['yoyaku'])) {
-      echo '予約管理を確認するにはログインしてください。';
-    } else {  //正常処理 ?>
-    <p>お名前：<?= $_SESSION['yoyaku']['name'] ?></p>
-    <p>日付：<?= $_SESSION['yoyaku']['date'] ?></p>
-    <p>会社名：<?= $_SESSION['yoyaku']['company'] ?></p>
-    <p>就職状況：<?= $_SESSION['syusyoku_status']['status'] ?></p>
-    <?php
-    }
+    require 'db_connect.php';
+    if (!isset($_SESSION['user'])) {
+      echo '個人情報を確認するにはログインしてください。';
+    } else {  //正常処理
+      $sql = "select * from yoyaku ";
+      $stm = $pdo->prepare($sql);
+      $stm->execute();
+      $result = $stm->fetchAll(PDO::FETCH_ASSOC);
     ?>
+      <div id="datepicker">
+        <div class="row-items">
+          <?php
+          foreach ($result as $row) {
+            if ($row['name'] == $_SESSION['user']['name']) {
+          ?>
+              <div id="it-list">
+                <div class="row-item">
+                  <p><?= $row['name'] ?></p>
+                  <p><?= $row['company'] ?></p>
+                  <p class="row-date">日時：<?= $row['date'] ?></p>
+                  <hr>
+                </div>
+              </div>
+            <?php
+            }
+            ?>
+        </div>
+    <?php
+          }
+        }
+    ?>
+      </div>
   </div>
 </body>
 <!-- footer -->
 <footer>
-<?php require_once 'footer.php'; ?>
+  <?php require_once 'footer.php'; ?>
 </footer>
 
 </html>

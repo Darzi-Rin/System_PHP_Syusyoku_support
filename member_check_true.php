@@ -14,7 +14,7 @@
   //MySQLデータベースに接続する
   require 'db_connect.php';
   //SQL文を作成
-  $sql = "INSERT INTO user VALUES(:null, :name , :password , :street_address , :mail , :age)";
+  $sql = "INSERT INTO user VALUES(null , :name , :password , :street_address , :mail , :age)";
   //プリペアードステートメントを作成
   $stm = $pdo->prepare($sql);
   $stm->bindValue(':name', $_POST['name'], PDO::PARAM_STR);

@@ -1,17 +1,21 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="css/style_home.css">
 </head>
+<header>
+    <?php require 'header.php'; ?>
+</header>
 <body>
-    <p>名前</p>
-    <input type="text" id="name">
-    <p>パスワード</p>
-    <input type="text" id="pass">
-    <p><a href="login_check_true.html"><input type="submit" value="login"></a></p>
-    <P><a href="login_check_false.html"><input type="submit" value="login_error"></a></P>
+    <form action="login_output.php" method="post">
+        名前　　　<input type="text" name="name"><br>
+        パスワード<input type="password" name="password"><br>
+        <input type="submit" value="ログイン">
+    </form>
 </body>
+
 </html>

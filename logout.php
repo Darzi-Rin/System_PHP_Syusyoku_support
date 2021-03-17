@@ -1,13 +1,18 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ログアウト画面</title>
+    <link rel="stylesheet" href="css/style_home.css">
 </head>
+<header>
+    <?php require 'header.php'; ?>
+</header>
 <body>
     <p>ログアウトしますか？</p>
-    <p><a href="top.php"><input type="submit" value="戻る"</a></p>
+    <a href="logout_output.php">ログアウト</a>
 </body>
+
 </html>
