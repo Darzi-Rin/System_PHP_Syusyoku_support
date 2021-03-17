@@ -30,7 +30,7 @@ foreach($result as $row){
     <div class="row-item">
         <img src="images/<?= $row['id'] ?>.png" class="row-img">
         <h4 class="row-name">
-            <a href="datail<?= $row['id'] ?>.html">
+            <a href="datail.php?id=<?= $row['id'] ?>">
             <?= $row['name'] ?>
             </a>
         </h4>
@@ -42,7 +42,7 @@ foreach($result as $row){
     <div class="row-item">
         <img src="images/<?= $row['id'] ?>.png" class="row-img">
         <h4 class="row-name">
-            <a href="datail<?= $row['id'] ?>.html">
+            <a href="datail.php?id=<?= $row['id'] ?>">
             <?= $row['name'] ?>
             </a>
         </h4>
@@ -53,5 +53,5 @@ foreach($result as $row){
     }
 }
 ?>
+<script href="js/code.js"></script>
 </div>
-<script src="js/code.js"></script>
