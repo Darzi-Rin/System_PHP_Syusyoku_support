@@ -40,7 +40,7 @@
     <?php
     require 'db_connect.php';
     if (!isset($_SESSION['user'])) {
-      echo '個人情報を確認するにはログインしてください。';
+      echo '予約情報を確認するにはログインしてください。';
     } else {  //正常処理
       $sql = "select * from yoyaku ";
       $stm = $pdo->prepare($sql);
