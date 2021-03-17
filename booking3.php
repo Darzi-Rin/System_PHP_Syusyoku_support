@@ -17,29 +17,29 @@
 <body>
   <section>
     <div class="customer">
-      <h3>ログイン情報</h3>
       <?php
       require 'db_connect.php';
       if (!isset($_SESSION['user'])) {
-        echo '個人情報を確認するにはログインしてください。';
+        echo '';
       } else {  //正常処理
       ?>
+        <h3>ログイン情報</h3>
         <p>お名前:<?= $_SESSION['user']['name'] ?></p>
         <p>パスワード:<?= $_SESSION['user']['password'] ?></p>
         <p>住所:<?= $_SESSION['user']['street_address'] ?></p>
         <p>メールアドレス:<?= $_SESSION['user']['mail'] ?></p>
         <p>年齢:<?= $_SESSION['user']['age'] ?></p>
+        <hr>
       <?php
       }
       ?>
     </div>
   </section>
-  <hr>
   <h2 class="title">説明会掲示</h2>
   <?php
   require 'db_connect.php';
   if (!isset($_SESSION['user'])) {
-    echo '個人情報を確認するにはログインしてください。';
+    echo '説明会情報を確認するにはログインしてください。';
   } else {  //正常処理
     $sql = "select * from demo_booking ";
     $stm = $pdo->prepare($sql);
