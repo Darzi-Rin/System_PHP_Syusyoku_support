@@ -28,7 +28,7 @@
         <h3>個人情報</h3>
         <p>お名前:<?= $_SESSION['user']['name'] ?></p>
         <p>パスワード:<?= $_SESSION['user']['password'] ?></p>
-        <p>住所:<?= $_SEESION['user']['street_addrees'] ?></p>
+        <p>住所:<?= $_SESSION['user']['street_address'] ?></p>
         <p>メールアドレス:<?= $_SESSION['user']['mail'] ?></p>
         <p>年齢:<?= $_SESSION['user']['age'] ?></p>
     </div>
