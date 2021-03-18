@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -11,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <title>学生向け説明会予約サイト</title>
 </head>
-<header><?php require "header.php" ?></header>
+<header><?php require_once "header.php" ?></header>
 
 <body>
     <h1 class="title">IT業界に幅広く対応！【Syusyoku_support】</h1>
@@ -23,7 +24,7 @@
     <p>今日の日付は青く塗られています。クリックすると、その日に何があるかを確認できます</p>
     <?php require 'calender.php'; ?>
 </body>
-<footer><?php require "footer.php" ?></footer>
+<footer><?php require_once "footer.php" ?></footer>
 <script src="js/code.js"></script>
 <script src="js/top.js"></script>
 
